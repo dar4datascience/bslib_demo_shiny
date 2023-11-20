@@ -1,6 +1,6 @@
 {
   "R": {
-    "Version": "4.2.2",
+    "Version": "4.3.2",
     "Repositories": [
       {
         "Name": "CRAN",
@@ -266,6 +266,17 @@
       ],
       "Hash": "3c150f6c43dfb5a76b1a69bfdb8ca287"
     },
+    "evaluate": {
+      "Package": "evaluate",
+      "Version": "0.23",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "methods"
+      ],
+      "Hash": "e97f52c3e52b02c56ef3004edb9eb812"
+    },
     "fansi": {
       "Package": "fansi",
       "Version": "1.0.3",
@@ -294,7 +305,7 @@
     },
     "fontawesome": {
       "Package": "fontawesome",
-      "Version": "0.4.0",
+      "Version": "0.5.2",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -302,7 +313,7 @@
         "htmltools",
         "rlang"
       ],
-      "Hash": "d7feb6d8fb938f8760c2586d5cc74fbb"
+      "Hash": "941a0932dda60b339a57c14b2b86d0a0"
     },
     "fs": {
       "Package": "fs",
@@ -385,6 +396,17 @@
       ],
       "Hash": "36b4265fb818f6a342bed217549cd896"
     },
+    "highr": {
+      "Package": "highr",
+      "Version": "0.10",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "xfun"
+      ],
+      "Hash": "a4c43a88a57355d3e5b2d6e0d0a54a33"
+    },
     "htmltools": {
       "Package": "htmltools",
       "Version": "0.5.3",
@@ -459,6 +481,22 @@
         "methods"
       ],
       "Hash": "8b1bd0be62956f2a6b91ce84fac79a45"
+    },
+    "knitr": {
+      "Package": "knitr",
+      "Version": "1.45",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "evaluate",
+        "highr",
+        "methods",
+        "tools",
+        "xfun",
+        "yaml"
+      ],
+      "Hash": "06d127b1c9063523d97008399c06f2e9"
     },
     "labeling": {
       "Package": "labeling",
@@ -764,14 +802,38 @@
     },
     "rlang": {
       "Package": "rlang",
-      "Version": "1.0.6",
+      "Version": "1.1.2",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "R",
         "utils"
       ],
-      "Hash": "4ed1f8336c8d52c3e750adcdc57228a7"
+      "Hash": "50a6dbdc522936ca35afc5e2082ea91b"
+    },
+    "rmarkdown": {
+      "Package": "rmarkdown",
+      "Version": "2.25",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "bslib",
+        "evaluate",
+        "fontawesome",
+        "htmltools",
+        "jquerylib",
+        "jsonlite",
+        "knitr",
+        "methods",
+        "stringr",
+        "tinytex",
+        "tools",
+        "utils",
+        "xfun",
+        "yaml"
+      ],
+      "Hash": "e245e598bf0147e914c60ba0813c4782"
     },
     "rsconnect": {
       "Package": "rsconnect",
@@ -932,6 +994,36 @@
       ],
       "Hash": "2a118bdd2db0a301711e0a9e3e3206d5"
     },
+    "stringi": {
+      "Package": "stringi",
+      "Version": "1.8.1",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "stats",
+        "tools",
+        "utils"
+      ],
+      "Hash": "fc91e69694e8ef25dafb9cb2a252ea8d"
+    },
+    "stringr": {
+      "Package": "stringr",
+      "Version": "1.5.1",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "cli",
+        "glue",
+        "lifecycle",
+        "magrittr",
+        "rlang",
+        "stringi",
+        "vctrs"
+      ],
+      "Hash": "960e2ae9e09656611e0b8214ad543207"
+    },
     "sys": {
       "Package": "sys",
       "Version": "3.4.1",
@@ -1013,6 +1105,16 @@
       ],
       "Hash": "79540e5fcd9e0435af547d885f184fd5"
     },
+    "tinytex": {
+      "Package": "tinytex",
+      "Version": "0.48",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "xfun"
+      ],
+      "Hash": "6da7681842dc35079e2efce353576700"
+    },
     "utf8": {
       "Package": "utf8",
       "Version": "1.2.2",
@@ -1025,7 +1127,7 @@
     },
     "vctrs": {
       "Package": "vctrs",
-      "Version": "0.5.0",
+      "Version": "0.6.4",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -1035,7 +1137,7 @@
         "lifecycle",
         "rlang"
       ],
-      "Hash": "001fd6a5ebfff8316baf9fb2b5516dc9"
+      "Hash": "266c1ca411266ba8f365fcc726444b87"
     },
     "viridis": {
       "Package": "viridis",
@@ -1076,14 +1178,14 @@
     },
     "xfun": {
       "Package": "xfun",
-      "Version": "0.34",
+      "Version": "0.41",
       "Source": "Repository",
-      "Repository": "CRAN",
+      "Repository": "RSPM",
       "Requirements": [
         "stats",
         "tools"
       ],
-      "Hash": "ccd451493ba52c31f54afa893dc19b2e"
+      "Hash": "2ba232922eb2b98bf83529090d5137e2"
     },
     "xtable": {
       "Package": "xtable",
