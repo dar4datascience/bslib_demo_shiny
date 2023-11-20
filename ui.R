@@ -9,7 +9,6 @@ tagList(
     #--- M O D U L E S ---#
     ui_Overview("main"),
     ui_Mapping("main"),
-    ui_Reports("main"),
-    ui_About("main")
+    ui_Reports("main")
   )
 )

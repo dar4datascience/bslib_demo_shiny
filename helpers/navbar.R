@@ -1,9 +1,9 @@
 fn_navbar <- function(){
   div(
     class = "bloomreach_logo",
-    a(href = "https://www.bloomreach.com/",
-      img(src = "blr_logo-primary.png",
-          title = "Bloomreach")
+    a(href = "https://agileengine.com/",
+      img(src = "agile.png",
+          title = "Agile Engine")
     )
   )
 }
