@@ -41,6 +41,15 @@ jobs:
           r-version: ${{ matrix.config.r }}
           # Enable RStudio Package Manager to speed up package installation
           use-public-rspm: true
+          
+      - name: Set RENV_PATHS_ROOT
+        shell: bash
+        run: |
+          echo "RENV_PATHS_ROOT=${{ runner.temp }}/renv" >> $GITHUB_ENV
+      - name: Install and activate renv
+        run: |
+          install.packages("renv")
+          renv::activate()
       
       - name: Restore packages
         uses: r-lib/actions/setup-renv@v2
