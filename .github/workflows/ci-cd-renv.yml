@@ -40,7 +40,7 @@ jobs:
         with:
           r-version: ${{ matrix.config.r }}
           # Enable RStudio Package Manager to speed up package installation
-          use-public-rspm: true
+          use-public-rspm: false
           
       - name: Set RENV_PATHS_ROOT
         shell: bash
