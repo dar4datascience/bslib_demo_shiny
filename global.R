@@ -1,5 +1,5 @@
-library(rlang)          # back-end toolbox for R
-library(rmarkdown)
+library(rlang)          # back-end toolbox for R 
+library(rmarkdown) 
 library(dplyr)          # data manipulation
 library(purrr)          # functional programming and iteration
 library(ggplot2)        # static graphics engine
