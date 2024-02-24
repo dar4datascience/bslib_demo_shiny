@@ -48,7 +48,7 @@ jobs:
           echo "RENV_PATHS_ROOT=${{ runner.temp }}/renv" >> $GITHUB_ENV
       - name: Install and activate renv
         run: |
-          install.packages("renv")
+          R install.packages("renv")
           renv::activate()
       
       - name: Restore packages
