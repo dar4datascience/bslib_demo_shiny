@@ -41,14 +41,6 @@ jobs:
           r-version: ${{ matrix.config.r }}
           # Enable RStudio Package Manager to speed up package installation
           use-public-rspm: true
-
-      - name: Cache packages
-        uses: actions/cache@v1
-        with:
-          path: ${{ env.RENV_PATHS_ROOT }}
-          key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-renv-
       
       - name: Restore packages
         shell: Rscript {0}
