@@ -5,4 +5,4 @@ rsconnect::setAccountInfo(
   Sys.getenv("SHINYAPPS_TOKEN"),
   Sys.getenv("SHINYAPPS_SECRET")
 )
-rsconnect::deployApp(appName = "bslib_demo_shiny")
+rsconnect::deployApp(appName = "bslib_demo_shiny", forceUpdate = TRUE)
