@@ -1052,7 +1052,7 @@
     },
     "terra": {
       "Package": "terra",
-      "Version": "1.7-65",
+      "Version": "1.7-71",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -1060,7 +1060,7 @@
         "Rcpp",
         "methods"
       ],
-      "Hash": "8e245fd4eab07bf55ddb2e6ea353c0e1"
+      "Hash": "e8611881ab70a4fb7a1f629b31e6fcff"
     },
     "thematic": {
       "Package": "thematic",
