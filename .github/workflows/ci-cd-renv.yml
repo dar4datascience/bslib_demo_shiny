@@ -52,7 +52,7 @@ jobs:
           R -e 'options(repos = c(CRAN = "https://cloud.r-project.org/")); install.packages("renv")'
        
       - name: Install curl
-        run: sudo apt update && sudo apt install -y curl
+        run: sudo apt update && sudo apt install -y libcurl4-openssl-dev
       
       - name: Restore packages
         uses: r-lib/actions/setup-renv@v2
